@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="navbar">
+            <a>my budget</a>
+    </div>
+    <div class="info-box">
+        <div class="info-section">
+            <div class="info-content">income</div>
+            <div id="income-amount">0</div>
+        </div>
+        <div class="vl"></div>
+        <div class="info-section">
+            <div class="info-content">expenditure</div>
+            <div id="expenditure-amount">0</div>
+        </div>
+        <div class="vl"></div>
+        <div class="info-section">
+            <div class="info-content">balance</div>
+            <div id="balance-amount">0</div>
+        </div>
+    </div>
+    <button class="floating-button" onclick="openModal()">＋</button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <select class="in-exp" id="type">
+                        <option value="income">income</option>
+                        <option value="expenditure">expenditure</option>
+                    </select>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="transaction-date">date</label>
+                        <input type="date" class="form-control" id="transaction-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">amount</label>
+                        <input type="number" class="form-control" id="amount" placeholder="Enter amount">
+                    </div>
+                    <div class="form-group">
+                        <label for="note">note</label>
+                        <textarea class="form-control" id="note" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                    <button type="button" class="btn btn-primary" onclick="saveTransaction()">save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="transaction-list" class="container mt-4">
+        <h2>transaction</h2>
+        <ul id="transactions" class="list-group"></ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="javascript.js"></script>
+    
+</body>
+</html>

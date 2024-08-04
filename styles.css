@@ -1,0 +1,91 @@
+.navbar {
+    overflow: hidden;
+    background-color: cornflowerblue;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+select{
+    background-color: #2a86aed5;
+    color: #f2f2f2; 
+    padding: 5px 10px;
+    border: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+select option {
+    background-color: #333;
+    color: #f2f2f2;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 90%;
+    background-color: #f9f9f9;
+}
+
+.info-section {
+    flex: 1;
+}
+
+.vl{
+    border-left: 1px solid rgb(0, 0, 0);
+    height: auto;
+    align-self: stretch;
+    margin: 0 10px;
+}
+
+.info-content {
+    text-align: center;
+}
+
+#income-amount{
+    text-align: center;
+}
+#expenditure-amount{
+    text-align: center;
+} 
+#balance-amount{
+    text-align: center;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.in-exp{
+    background-color: white;
+    color: black;
+}
